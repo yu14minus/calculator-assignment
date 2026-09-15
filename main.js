@@ -45,6 +45,8 @@ function clickBtn(type, value) {
 
             if (Function('return ('+displayValue+');')() === Infinity) {
                 errorMessage();
+            } else if (Function('return ('+displayValue+');')() === -Infinity) {
+                errorMessage();
             } else {
                 displayValue = String(Function('return ('+displayValue+');')());
             }
