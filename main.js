@@ -89,7 +89,7 @@ function clickBtn(type, value) {
         }
         
         if (value === '(') {
-            if (["op", "("].includes(tail)) {
+            if (["", "op", "("].includes(tail)) {
                 displayValue += value;
                 parenNum++;
                 tail = "(";
