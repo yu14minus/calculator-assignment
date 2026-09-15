@@ -78,6 +78,7 @@ function clickBtn(type, value) {
 
                     displayValue += value;
                     tail = "op";
+                    valueZero = false;
                     dotNum = 0;
                 }
             }
@@ -89,6 +90,7 @@ function clickBtn(type, value) {
         if (value === 'c') {
             displayValue = "";
             tail = "";
+            valueZero = false;
             dotNum = 0;
         }
 
@@ -101,6 +103,7 @@ function clickBtn(type, value) {
                 displayValue += value;
                 parenNum++;
                 tail = "(";
+                valueZero = false;
             }
         }
         
@@ -110,6 +113,7 @@ function clickBtn(type, value) {
                     displayValue += value;
                     parenNum--;
                     tail = ")";
+                    valueZero = false;
                 }
             }
         }
@@ -119,6 +123,7 @@ function clickBtn(type, value) {
                 if (dotNum === 0) {
                     displayValue += value;
                     tail = ".";
+                    valueZero = false;
                     dotNum = 1;
                 }
             }
