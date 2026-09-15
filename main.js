@@ -42,7 +42,13 @@ function clickBtn(type, value) {
             }
 
             displayValue = displayValue.replace("×", "*");
-            displayValue = String(Function('return ('+displayValue+');')());
+
+            if (Function('return ('+displayValue+');')() === Infinity) {
+                errorMessage();
+            } else {
+                displayValue = String(Function('return ('+displayValue+');')());
+            }
+
             tail = "=";
 
             // 小数点カウントリセット
