@@ -62,29 +62,29 @@
     <div class="calculator">
         <input type="text" id="display" readonly>
         <div class="buttons">
-            <button data-testid="btn-clear">C</button>
-            <button data-testid="btn-paren-left">(</button>
-            <button data-testid="btn-paren-right">)</button>
-            <button data-testid="btn-divide" class="operator">/</button>
-            <button data-testid="btn-7">7</button>
-            <button data-testid="btn-8">8</button>
-            <button data-testid="btn-9">9</button>
-            <button data-testid="btn-multiply" class="operator">×</button>
-            <button data-testid="btn-4">4</button>
-            <button data-testid="btn-5">5</button>
-            <button data-testid="btn-6">6</button>
-            <button data-testid="btn-subtract" class="operator">-</button>
-            <button data-testid="btn-1">1</button>
-            <button data-testid="btn-2">2</button>
-            <button data-testid="btn-3">3</button>
-            <button data-testid="btn-add" class="operator">+</button>
-            <button data-testid="btn-0">0</button>
-            <button data-testid="btn-dot">.</button>
-            <button data-testid="btn-backspace">←</button>
-            <button data-testid="btn-equals" class="operator">=</button>
+            <button data-testid="btn-clear" onclick="clickBtn('other', 'c')">C</button>
+            <button data-testid="btn-paren-left" onclick="clickBtn('other', '(')">(</button>
+            <button data-testid="btn-paren-right" onclick="clickBtn('other', ')')">)</button>
+            <button data-testid="btn-divide" class="operator" onclick="clickBtn('op', '/')">/</button>
+            <button data-testid="btn-7" onclick="clickBtn('num', '7')">7</button>
+            <button data-testid="btn-8" onclick="clickBtn('num', '8')">8</button>
+            <button data-testid="btn-9" onclick="clickBtn('num', '9')">9</button>
+            <button data-testid="btn-multiply" class="operator" onclick="clickBtn('op', '×')">×</button>
+            <button data-testid="btn-4" onclick="clickBtn('num', '4')">4</button>
+            <button data-testid="btn-5" onclick="clickBtn('num', '5')">5</button>
+            <button data-testid="btn-6" onclick="clickBtn('num', '6')">6</button>
+            <button data-testid="btn-subtract" class="operator" onclick="clickBtn('op', '-')">-</button>
+            <button data-testid="btn-1" onclick="clickBtn('num', '1')">1</button>
+            <button data-testid="btn-2" onclick="clickBtn('num', '2')">2</button>
+            <button data-testid="btn-3" onclick="clickBtn('num', '3')">3</button>
+            <button data-testid="btn-add" class="operator" onclick="clickBtn('op', '+')">+</button>
+            <button data-testid="btn-0" onclick="clickBtn('num', '0')">0</button>
+            <button data-testid="btn-dot" onclick="clickBtn('other', '.')">.</button>
+            <button data-testid="btn-backspace" onclick="clickBtn('other', 'bs')">←</button>
+            <button data-testid="btn-equals" class="operator" onclick="clickBtn('op', '=')">=</button>
         </div>
     </div>
-    <script>
+    <script src="./main.js">
     </script>
 </body>
 </html>
