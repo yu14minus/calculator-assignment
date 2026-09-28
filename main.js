@@ -41,7 +41,7 @@ function clickBtn(type, value) {
                 backSpace();
             }
 
-            displayValue = displayValue.replace("×", "*");
+            displayValue = displayValue.replaceAll("×", "*");
 
             if (Function('return ('+displayValue+');')() === Infinity) {
                 errorMessage();
